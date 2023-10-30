@@ -1,0 +1,38 @@
+random-xs:
+    thing:
+      docker-tag: neurips23-ood-thing
+      module: neurips23.ood.thing.thing
+      constructor: ExpAnnWrapper
+      base-args: ["@metric"]
+      run-groups:
+        base:
+          args: |
+            [{"R":30, "L":50, "alpha":1.2}]
+          query-args: |
+            [{"Ls":50, "T":8}]
+
+text2image-1M:
+    thing:
+      docker-tag: neurips23-ood-thing
+      module: neurips23.ood.thing.thing
+      constructor: ExpAnnWrapper
+      base-args: ["@metric"]
+      run-groups:
+        base:
+          args: |
+            [{"R":30, "L":50, "alpha":1.2}]
+          query-args: |
+            [{"Ls":50, "T":8}]
+
+text2image-10M:
+    thing:
+      docker-tag: neurips23-ood-thing
+      module: neurips23.ood.thing.thing
+      constructor: ExpAnnWrapper
+      base-args: ["@metric"]
+      run-groups:
+        base:
+          args: |
+            [{"R":30, "L":50, "alpha":1.2}]
+          query-args: |
+            [{"Ls":50, "T":8}]
