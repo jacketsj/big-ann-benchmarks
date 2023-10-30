@@ -289,6 +289,7 @@ def run_docker(definition, dataset, count, runs, timeout, rebuild,
             },
             cpuset_cpus=cpu_limit,
             mem_limit=mem_limit,
+            memswap_limit=31*1024*1024*1024,
             detach=True)
  
     # set/override container timeout based on competition flag
